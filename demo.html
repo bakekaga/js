@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+			My Simple Demo
+		</title>
+		<link rel = "stylesheet" href = "demo.css">
+		<!-- JavaScript below -->
+		<script>
+			// conditionals
+			var myInt = 0;
+			if (myInt >= 0) {
+				console.log("inside my conditional");
+			}
+			else {
+				console.log("inside the else");
+			}
+			var value = myInt < 0 ? "my int is negative" : "my int is nonnegative";
+			console.log(value);
+			
+			// arrays
+			var myArr = [0, 1, 2];
+			console.log(myArr);
+			myArr.push(3);
+			// for each loops + functions
+			function myFunction() {
+				console.log("inside the function");
+			}
+			myFunction();
+
+			const myArrowFunction = () => {
+				console.log("inside my arrow function")
+			}
+
+			myArr.forEach((item) => {
+				console.log(item);
+			})
+			myArr.forEach(myFunction);
+			// note that arrow function needs to be defined prior
+			myArr.forEach(myArrowFunction);
+
+			// objects
+			var myObj = {item1: "my first item", item2: "my second item"};
+			console.log(myObj.item1);
+		</script>
+	</head>
+
+	<body>
+		<!-- id should be assigned uniquely, classes can be modified together -->
+		<p class = "paragraph">anything i type</p>
+		<h1 class = "paragraph">heading1</h1>
+		<h2 id = "h2">heading2</h2>
+		<h3>heading3</h3>
+		
+		<a href = "https://www.google.com/">link</a>
+		<span>text</span>
+		
+		<div class = "myDiv">
+			<h1> My Heading</h1>
+			<p class = "paragraph">this is the content of my webpage</p>
+		</div>
+	</body>
+</html>
